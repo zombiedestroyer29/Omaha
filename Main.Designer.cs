@@ -48,6 +48,7 @@ namespace HaloBlobViewer
             this.TagViewPanel = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.TagViewTSLoadedTag = new System.Windows.Forms.TextBox();
+            this.tagStatus = new System.Windows.Forms.Label();
             this.maintoolstrip.SuspendLayout();
             this.TagViewPanel.SuspendLayout();
             this.SuspendLayout();
@@ -239,12 +240,22 @@ namespace HaloBlobViewer
             this.TagViewTSLoadedTag.TabIndex = 1;
             this.TagViewTSLoadedTag.Text = "No Tag Loaded";
             // 
+            // tagStatus
+            // 
+            this.tagStatus.Location = new System.Drawing.Point(1149, 650);
+            this.tagStatus.Name = "tagStatus";
+            this.tagStatus.Size = new System.Drawing.Size(115, 13);
+            this.tagStatus.TabIndex = 8;
+            this.tagStatus.Text = "0/0";
+            this.tagStatus.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // mainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(1449, 713);
+            this.Controls.Add(this.tagStatus);
             this.Controls.Add(this.TagViewPanel);
             this.Controls.Add(this.CacheLoadPBar);
             this.Controls.Add(this.tag_tree);
@@ -284,6 +295,7 @@ namespace HaloBlobViewer
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         public System.Windows.Forms.ProgressBar CacheLoadPBar;
+        public System.Windows.Forms.Label tagStatus;
     }
 }
 
