@@ -201,6 +201,8 @@ namespace HaloBlobViewer.source.formats
                 }
             }
 
+            TextBox shitfix = new TextBox();
+
             for (Int32 i = 0; i < NumTagsToLoad; i++)
             {
                 //get tag type to determine the tag name's extension the the actual tag name then combine them
@@ -217,7 +219,7 @@ namespace HaloBlobViewer.source.formats
 
                 bool stringisfinished = false;
 
-                TextBox shitfix = new TextBox();
+                
 
                 while (stringisfinished == false)
                 {
