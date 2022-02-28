@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="Reach" baseSize="0xC">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="DarkShallFall" version="1">Mapped plugin structure a new.</revision>
+		<revision author="Lord Zedd" version="2">Port from chdt</revision>
+	</revisions>
+	<tagblock name="Animation Data" offset="0x0" visible="true" elementSize="0x64">
+		<flags8 name="Animation 1 Flags" offset="0x0" visible="true">
+			<bit name="Reverse Frames" index="0" />
+		</flags8>
+		<enum8 name="Animation 1 Function" offset="0x1" visible="true">
+			<option name="Default" value="0x0" />
+			<option name="Use Input" value="0x1" />
+			<option name="Use Range Input" value="0x2" />
+			<option name="Zero" value="0x3" />
+		</enum8>
+		<int16 name="Unknown" offset="0x2" visible="false" />
+		<tagRef name="Animation 1" offset="0x4" visible="true" />
+		<flags8 name="Animation 2 Flags" offset="0x14" visible="true">
+			<bit name="Reverse Frames" index="0" />
+		</flags8>
+		<enum8 name="Animation 2 Function" offset="0x15" visible="true">
+			<option name="Default" value="0x0" />
+			<option name="Use Input" value="0x1" />
+			<option name="Use Range Input" value="0x2" />
+			<option name="Zero" value="0x3" />
+		</enum8>
+		<int16 name="Unknown" offset="0x16" visible="false" />
+		<tagRef name="Animation 2" offset="0x18" visible="true" />
+		<flags8 name="Animation 3 Flags" offset="0x28" visible="true">
+			<bit name="Reverse Frames" index="0" />
+		</flags8>
+		<enum8 name="Animation 3 Function" offset="0x29" visible="true">
+			<option name="Default" value="0x0" />
+			<option name="Use Input" value="0x1" />
+			<option name="Use Range Input" value="0x2" />
+			<option name="Zero" value="0x3" />
+		</enum8>
+		<int16 name="Unknown" offset="0x2A" visible="false" />
+		<tagRef name="Animation 3" offset="0x2C" visible="true" />
+		<flags8 name="Animation 4 Flags" offset="0x3C" visible="true">
+			<bit name="Reverse Frames" index="0" />
+		</flags8>
+		<enum8 name="Animation 4 Function" offset="0x3D" visible="true">
+			<option name="Default" value="0x0" />
+			<option name="Use Input" value="0x1" />
+			<option name="Use Range Input" value="0x2" />
+			<option name="Zero" value="0x3" />
+		</enum8>
+		<int16 name="Unknown" offset="0x3E" visible="false" />
+		<tagRef name="Animation 4" offset="0x40" visible="true" />
+		<flags8 name="Animation 5 Flags" offset="0x50" visible="true">
+			<bit name="Reverse Frames" index="0" />
+		</flags8>
+		<enum8 name="Animation 5 Function" offset="0x51" visible="true">
+			<option name="Default" value="0x0" />
+			<option name="Use Input" value="0x1" />
+			<option name="Use Range Input" value="0x2" />
+			<option name="Zero" value="0x3" />
+		</enum8>
+		<int16 name="Unknown" offset="0x52" visible="false" />
+		<tagRef name="Animation 5" offset="0x54" visible="true" />
+	</tagblock>
+</plugin>

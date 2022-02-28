@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plugin game="Reach" baseSize="0x50">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="DarkShallFall" version="1">Mapped plugin structure a new.</revision>
+		<revision author="Lord Zedd" version="2">Almost</revision>
+		<revision author="Lord Zedd" version="3">Thanks h5</revision>
+	</revisions>
+	<comment title="Applying Collision Damage">for things that want to cause more or less collision damage</comment>
+	<float32 name="Apply Collision Damage Scale" offset="0x0" visible="true" />
+	<float32 name="Friendly Apply Collision Damage Scale" offset="0x4" visible="true" />
+	<comment title="Game Collision Damage Parameters">0 - means take default value from globals.globals</comment>
+	<float32 name="Minimum Velocity For Game Damage" offset="0x8" visible="true" />
+	<dataRef name="Game Collision Damage Function" offset="0xC" visible="true" />
+	<rangef name="Game Acceleration" offset="0x20" visible="true" />
+	<comment title="Applying Absolute Collision Damage">for things that want to cause more or less collision damage</comment>
+	<float32 name="Apply Absolute Collision Damage Scale" offset="0x28" visible="true" />
+	<float32 name="Friendly Apply Absolute Collision Damage Scale" offset="0x2C" visible="true" />
+	<comment title="Absolute Collision Damage Parameters">0 - means take default value from globals.globals</comment>
+	<float32 name="Minimum Velocity For Absolute Damage" offset="0x30" visible="true" />
+	<dataRef name="Absolute Collision Damage Function" offset="0x34" visible="true" />
+	<rangef name="Absolute Acceleration" offset="0x48" visible="true" />
+</plugin>

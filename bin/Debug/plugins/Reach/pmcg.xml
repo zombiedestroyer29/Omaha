@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plugin game="Reach" baseSize="0xC8">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="DarkShallFall" version="1">Mapped plugin structure a new.</revision>
+		<revision author="Lord Zedd" version="2">Only that last, seemingly unused value in every struct.</revision>
+		<revision author="Lord Zedd" version="3">...Turns out it is gender.</revision>
+	</revisions>
+	<tagref name="Unused Spartan Model" offset="0x0" visible="true" />
+	<tagref name="Unused Elite Model" offset="0x10" visible="true" />
+	<tagblock name="Helmet" offset="0x20" visible="true" elementSize="0x10">
+		<stringId name="Name" offset="0x0" visible="true" />
+		<tagblock name="Configuration" offset="0x4" visible="true" elementSize="0xC">
+			<stringid name="Region" offset="0x0" visible="true" />
+			<stringId name="Permutation" offset="0x4" visible="true" />
+			<flags8 name="Flags" offset="0x8" visible="true">
+				<bit name="Male Specific" index="0" />
+				<bit name="Female Specific" index="1" />
+				<bit name="Move Elite Mandibles For Helmet" index="2" />
+			</flags8>
+			<int8 name="Unknown" offset="0x9" visible="false" />
+			<int8 name="Unknown" offset="0xA" visible="false" />
+			<int8 name="Unknown" offset="0xB" visible="false" />
+		</tagblock>
+	</tagblock>
+	<tagblock name="Left Shoulder" offset="0x2C" visible="true" elementSize="0x10">
+		<stringId name="Name" offset="0x0" visible="true" />
+		<tagblock name="Configuration" offset="0x4" visible="true" elementSize="0xC">
+			<stringid name="Region" offset="0x0" visible="true" />
+			<stringId name="Permutation" offset="0x4" visible="true" />
+			<flags8 name="Flags" offset="0x8" visible="true">
+				<bit name="Male Specific" index="0" />
+				<bit name="Female Specific" index="1" />
+				<bit name="Move Elite Mandibles For Helmet" index="2" />
+			</flags8>
+			<int8 name="Unknown" offset="0x9" visible="false" />
+			<int8 name="Unknown" offset="0xA" visible="false" />
+			<int8 name="Unknown" offset="0xB" visible="false" />
+		</tagblock>
+	</tagblock>
+	<tagblock name="Right Shoulder" offset="0x38" visible="true" elementSize="0x10">
+		<stringId name="Name" offset="0x0" visible="true" />
+		<tagblock name="Configuration" offset="0x4" visible="true" elementSize="0xC">
+			<stringid name="Region" offset="0x0" visible="true" />
+			<stringId name="Permutation" offset="0x4" visible="true" />
+			<flags8 name="Flags" offset="0x8" visible="true">
+				<bit name="Male Specific" index="0" />
+				<bit name="Female Specific" index="1" />
+				<bit name="Move Elite Mandibles For Helmet" index="2" />
+			</flags8>
+			<int8 name="Unknown" offset="0x9" visible="false" />
+			<int8 name="Unknown" offset="0xA" visible="false" />
+			<int8 name="Unknown" offset="0xB" visible="false" />
+		</tagblock>
+	</tagblock>
+	<tagblock name="Chest" offset="0x44" visible="true" elementSize="0x10">
+		<stringId name="Name" offset="0x0" visible="true" />
+		<tagblock name="Configuration" offset="0x4" visible="true" elementSize="0xC">
+			<stringid name="Region" offset="0x0" visible="true" />
+			<stringId name="Permutation" offset="0x4" visible="true" />
+			<flags8 name="Flags" offset="0x8" visible="true">
+				<bit name="Male Specific" index="0" />
+				<bit name="Female Specific" index="1" />
+				<bit name="Move Elite Mandibles For Helmet" index="2" />
+			</flags8>
+			<int8 name="Unknown" offset="0x9" visible="false" />
+			<int8 name="Unknown" offset="0xA" visible="false" />
+			<int8 name="Unknown" offset="0xB" visible="false" />
+		</tagblock>
+	</tagblock>
+	<tagblock name="Wrist" offset="0x50" visible="true" elementSize="0x10">
+		<stringId name="Name" offset="0x0" visible="true" />
+		<tagblock name="Configuration" offset="0x4" visible="true" elementSize="0xC">
+			<stringid name="Region" offset="0x0" visible="true" />
+			<stringId name="Permutation" offset="0x4" visible="true" />
+			<flags8 name="Flags" offset="0x8" visible="true">
+				<bit name="Male Specific" index="0" />
+				<bit name="Female Specific" index="1" />
+				<bit name="Move Elite Mandibles For Helmet" index="2" />
+			</flags8>
+			<int8 name="Unknown" offset="0x9" visible="false" />
+			<int8 name="Unknown" offset="0xA" visible="false" />
+			<int8 name="Unknown" offset="0xB" visible="false" />
+		</tagblock>
+	</tagblock>
+	<tagblock name="Leg Utility" offset="0x5C" visible="true" elementSize="0x10">
+		<stringId name="Name" offset="0x0" visible="true" />
+		<tagblock name="Configuration" offset="0x4" visible="true" elementSize="0xC">
+			<stringid name="Region" offset="0x0" visible="true" />
+			<stringId name="Permutation" offset="0x4" visible="true" />
+			<flags8 name="Flags" offset="0x8" visible="true">
+				<bit name="Male Specific" index="0" />
+				<bit name="Female Specific" index="1" />
+				<bit name="Move Elite Mandibles For Helmet" index="2" />
+			</flags8>
+			<int8 name="Unknown" offset="0x9" visible="false" />
+			<int8 name="Unknown" offset="0xA" visible="false" />
+			<int8 name="Unknown" offset="0xB" visible="false" />
+		</tagblock>
+	</tagblock>
+	<tagblock name="Knees" offset="0x68" visible="true" elementSize="0x10">
+		<stringId name="Name" offset="0x0" visible="true" />
+		<tagblock name="Configuration" offset="0x4" visible="true" elementSize="0xC">
+			<stringid name="Region" offset="0x0" visible="true" />
+			<stringId name="Permutation" offset="0x4" visible="true" />
+			<flags8 name="Flags" offset="0x8" visible="true">
+				<bit name="Male Specific" index="0" />
+				<bit name="Female Specific" index="1" />
+				<bit name="Move Elite Mandibles For Helmet" index="2" />
+			</flags8>
+			<int8 name="Unknown" offset="0x9" visible="false" />
+			<int8 name="Unknown" offset="0xA" visible="false" />
+			<int8 name="Unknown" offset="0xB" visible="false" />
+		</tagblock>
+	</tagblock>
+	<tagblock name="Elite Armor" offset="0x74" visible="true" elementSize="0x10">
+		<stringId name="Name" offset="0x0" visible="true" />
+		<tagblock name="Configuration" offset="0x4" visible="true" elementSize="0xC">
+			<stringid name="Region" offset="0x0" visible="true" />
+			<stringId name="Permutation" offset="0x4" visible="true" />
+			<flags8 name="Flags" offset="0x8" visible="true">
+				<bit name="Male Specific" index="0" />
+				<bit name="Female Specific" index="1" />
+				<bit name="Move Elite Mandibles For Helmet" index="2" />
+			</flags8>
+			<int8 name="Unknown" offset="0x9" visible="false" />
+			<int8 name="Unknown" offset="0xA" visible="false" />
+			<int8 name="Unknown" offset="0xB" visible="false" />
+		</tagblock>
+	</tagblock>
+	<tagblock name="Spartan Armor Effects" offset="0x80" visible="true" elementSize="0x10">
+		<stringId name="Name" offset="0x0" visible="true" />
+		<tagblock name="Configuration" offset="0x4" visible="true" elementSize="0xC">
+			<stringid name="Region" offset="0x0" visible="true" />
+			<stringId name="Permutation" offset="0x4" visible="true" />
+			<flags8 name="Flags" offset="0x8" visible="true">
+				<bit name="Male Specific" index="0" />
+				<bit name="Female Specific" index="1" />
+				<bit name="Move Elite Mandibles For Helmet" index="2" />
+			</flags8>
+			<int8 name="Unknown" offset="0x9" visible="false" />
+			<int8 name="Unknown" offset="0xA" visible="false" />
+			<int8 name="Unknown" offset="0xB" visible="false" />
+		</tagblock>
+	</tagblock>
+	<tagblock name="Elite Armor Effects" offset="0x8C" visible="true" elementSize="0x10">
+		<stringId name="Name" offset="0x0" visible="true" />
+		<tagblock name="Configuration" offset="0x4" visible="true" elementSize="0xC">
+			<stringid name="Region" offset="0x0" visible="true" />
+			<stringId name="Permutation" offset="0x4" visible="true" />
+			<flags8 name="Flags" offset="0x8" visible="true">
+				<bit name="Male Specific" index="0" />
+				<bit name="Female Specific" index="1" />
+				<bit name="Move Elite Mandibles For Helmet" index="2" />
+			</flags8>
+			<int8 name="Unknown" offset="0x9" visible="false" />
+			<int8 name="Unknown" offset="0xA" visible="false" />
+			<int8 name="Unknown" offset="0xB" visible="false" />
+		</tagblock>
+	</tagblock>
+	<tagblock name="Male Base" offset="0x98" visible="true" elementSize="0xC">
+		<stringid name="Region" offset="0x0" visible="true" />
+		<stringId name="Permutation" offset="0x4" visible="true" />
+		<flags8 name="Flags" offset="0x8" visible="true">
+			<bit name="Male Specific" index="0" />
+			<bit name="Female Specific" index="1" />
+			<bit name="Move Elite Mandibles For Helmet" index="2" />
+		</flags8>
+		<int8 name="Unknown" offset="0x9" visible="false" />
+		<int8 name="Unknown" offset="0xA" visible="false" />
+		<int8 name="Unknown" offset="0xB" visible="false" />
+	</tagblock>
+	<tagblock name="Female Base" offset="0xA4" visible="true" elementSize="0xC">
+		<stringid name="Region" offset="0x0" visible="true" />
+		<stringId name="Permutation" offset="0x4" visible="true" />
+		<flags8 name="Flags" offset="0x8" visible="true">
+			<bit name="Male Specific" index="0" />
+			<bit name="Female Specific" index="1" />
+			<bit name="Move Elite Mandibles For Helmet" index="2" />
+		</flags8>
+		<int8 name="Unknown" offset="0x9" visible="false" />
+		<int8 name="Unknown" offset="0xA" visible="false" />
+		<int8 name="Unknown" offset="0xB" visible="false" />
+	</tagblock>
+	<tagblock name="Spartan Base" offset="0xB0" visible="true" elementSize="0xC">
+		<stringid name="Region" offset="0x0" visible="true" />
+		<stringId name="Permutation" offset="0x4" visible="true" />
+		<flags8 name="Flags" offset="0x8" visible="true">
+			<bit name="Male Specific" index="0" />
+			<bit name="Female Specific" index="1" />
+			<bit name="Move Elite Mandibles For Helmet" index="2" />
+		</flags8>
+		<int8 name="Unknown" offset="0x9" visible="false" />
+		<int8 name="Unknown" offset="0xA" visible="false" />
+		<int8 name="Unknown" offset="0xB" visible="false" />
+	</tagblock>
+	<tagblock name="Elite Base" offset="0xBC" visible="true" elementSize="0xC">
+		<stringid name="Region" offset="0x0" visible="true" />
+		<stringId name="Permutation" offset="0x4" visible="true" />
+		<flags8 name="Flags" offset="0x8" visible="true">
+			<bit name="Male Specific" index="0" />
+			<bit name="Female Specific" index="1" />
+			<bit name="Move Elite Mandibles For Helmet" index="2" />
+		</flags8>
+		<int8 name="Unknown" offset="0x9" visible="false" />
+		<int8 name="Unknown" offset="0xA" visible="false" />
+		<int8 name="Unknown" offset="0xB" visible="false" />
+	</tagblock>
+</plugin>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plugin game="Reach" baseSize="0x74">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="DarkShallFall" version="1">Mapped plugin structure a new.</revision>
+		<revision author="OrangeMohawk" version="2">Original research.</revision>
+		<revision author="Lord Zedd" version="3">Updated some things</revision>
+	</revisions>
+	<flags8 name="Flags" offset="0x0" visible="true">
+		<bit name="Bit 0" index="0" />
+		<bit name="Loops" index="1" />
+		<bit name="Loops - Oscillate" index="2" />
+		<bit name="Bit 3" index="3" />
+		<bit name="Bit 4" index="4" />
+		<bit name="Bit 5" index="5" />
+		<bit name="Bit 6" index="6" />
+		<bit name="Bit 7" index="7" />
+	</flags8>
+	<int8 name="Unknown" offset="0x1" visible="false" />
+	<int16 name="Unknown" offset="0x2" visible="false" />
+	<tagblock name="Position" offset="0x4" visible="true" elementSize="0x20">
+		<tagblock name="Animation" offset="0x0" visible="true" elementSize="0x10">
+			<float32 name="Frame Number" offset="0x0" visible="true" />
+			<point3 name="Position" offset="0x4" visible="true" />
+		</tagblock>
+		<dataRef name="Function" offset="0xC" visible="true" />
+	</tagblock>
+	<tagblock name="Rotation" offset="0x10" visible="true" elementSize="0x20">
+		<tagblock name="Animation" offset="0x0" visible="true" elementSize="0x10">
+			<float32 name="Frame Number" offset="0x0" visible="true" />
+			<degree3 name="Angle" offset="0x4" visible="true" />
+		</tagblock>
+		<dataRef name="Function" offset="0xC" visible="true" />
+	</tagblock>
+	<tagblock name="Size" offset="0x1C" visible="true" elementSize="0x20">
+		<tagblock name="Animation" offset="0x0" visible="true" elementSize="0xC">
+			<float32 name="Frame Number" offset="0x0" visible="true" />
+			<point2 name="Stretch" offset="0x4" visible="true" />
+		</tagblock>
+		<dataRef name="Unknown" offset="0xC" visible="false" />
+	</tagblock>
+	<tagblock name="Color" offset="0x28" visible="true" elementSize="0x20">
+		<tagblock name="Animation" offset="0x0" visible="true" elementSize="0x4">
+			<float32 name="Frame Number" offset="0x0" visible="true" />
+		</tagblock>
+		<comment title="Color Function">Color 1 - x05 (11th character)
+Color 2 - x09 (19th character)
+Color 3 - x13 (27th character)
+Color 4 - x17 (35th character)
+If a tag uses 2 colors, x05 and x17. If 3 colors x05, x09, and x17.</comment>
+		<dataRef name="Function" offset="0xC" visible="true" />
+	</tagblock>
+	<tagblock name="Alpha" offset="0x34" visible="true" elementSize="0x20">
+		<tagblock name="Animation" offset="0x0" visible="true" elementSize="0x8">
+			<float32 name="Frame Number" offset="0x0" visible="true" />
+			<float32 name="Alpha" offset="0x4" visible="true" />
+		</tagblock>
+		<dataRef name="Function" offset="0xC" visible="true" />
+	</tagblock>
+	<tagblock name="Alpha Unknown" offset="0x40" visible="true" elementSize="0x20">
+		<tagblock name="Animation" offset="0x0" visible="true" elementSize="0x8">
+			<float32 name="Frame Number" offset="0x0" visible="true" />
+			<float32 name="Alpha" offset="0x4" visible="true" />
+		</tagblock>
+		<dataRef name="Function" offset="0xC" visible="true" />
+	</tagblock>
+	<tagblock name="Texture Coordinates" offset="0x4C" visible="true" elementSize="0x20">
+		<tagblock name="Animation" offset="0x0" visible="true" elementSize="0x14">
+			<float32 name="Frame Number" offset="0x0" visible="true" />
+			<point2 name="Movement 1" offset="0x4" visible="true" />
+			<point2 name="Movement 2" offset="0xC" visible="true" />
+		</tagblock>
+		<dataRef name="Function" offset="0xC" visible="true" />
+	</tagblock>
+	<tagblock name="Ammo Counter Boot" offset="0x58" visible="true" elementSize="0x20">
+		<tagblock name="Ammo Counter" offset="0x0" visible="true" elementSize="0x8">
+			<float32 name="Frame Number" offset="0x0" visible="true" />
+			<float32 name="Boot Progress Fraction" offset="0x4" visible="true" />
+		</tagblock>
+		<dataRef name="Function" offset="0xC" visible="true" />
+	</tagblock>
+	<int32 name="Unknown Animation Block" offset="0x64" visible="false" />
+	<int32 name="Unknown Animation Block" offset="0x68" visible="false" />
+	<int32 name="Unknown Animation Block" offset="0x6C" visible="false" />
+	<float32 name="Number of Frames" offset="0x70" visible="true" />
+</plugin>
