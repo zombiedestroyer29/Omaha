@@ -37,14 +37,21 @@ namespace HaloBlobViewer
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tag_cache_folder_browser.ShowDialog();
-            string cache_folder = tag_cache_folder_browser.SelectedPath;
-            BlobIndexFile = cache_folder + "\\blob_index.dat";
-            Globals.BIPath = BlobIndexFile;
-            debug_output.Text = cache_folder;
-            BlobIndex BI = new BlobIndex();
-            BI.ParseTagCache();
-            //ParseTagCache(cache_folder);
+            DialogResult result = tag_cache_folder_browser.ShowDialog();
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                string cache_folder = tag_cache_folder_browser.SelectedPath;
+                BlobIndexFile = cache_folder + "\\blob_index.dat";
+                Globals.BIPath = BlobIndexFile;
+                debug_output.Text = cache_folder;
+                BlobIndex BI = new BlobIndex();
+                BI.ParseTagCache();
+                //ParseTagCache(cache_folder);
+            }
+            else if (result == System.Windows.Forms.DialogResult.Cancel)
+            {
+                //Nothing
+            }
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -115,9 +122,12 @@ namespace HaloBlobViewer
                         }
                     }
                     CacheLoadPBar.Value++;
+                    tagStatus.Text = "Parsing...";
+                    tagStatus.Update();
                 }
                 CacheLoadPBar.Maximum = 0;
                 CacheLoadPBar.Value = 0;
+                tagStatus.Text = "Done!";
             }
         }
 

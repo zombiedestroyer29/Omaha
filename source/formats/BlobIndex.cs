@@ -218,7 +218,6 @@ namespace HaloBlobViewer.source.formats
                 Blob.Seek(name_table_offset + TagNameOffset, SeekOrigin.Begin);
 
                 bool stringisfinished = false;
-
                 
 
                 while (stringisfinished == false)
@@ -246,9 +245,14 @@ namespace HaloBlobViewer.source.formats
                     tag_list.Add(tag_name);
                 }
                 Globals.form.CacheLoadPBar.Value = i;
+
+                //show the number of tags being loaded
+                Globals.form.tagStatus.Text = Convert.ToString(i) + "/" + NumTagsToLoad;
+                Globals.form.tagStatus.Update();
             }
             Globals.form.CacheLoadPBar.Maximum = 0;
             Globals.form.CacheLoadPBar.Value = 0;
+            Globals.form.tagStatus.Text = "0";
             Blob.Seek(0, SeekOrigin.Begin);
             return tag_list;
         }
