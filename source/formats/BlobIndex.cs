@@ -241,8 +241,22 @@ namespace HaloBlobViewer.source.formats
                     string tag_name = tag_path + "." + group;
 
                     Globals.form.debug_output.AppendText(Environment.NewLine + tag_name);
-
+                    
                     tag_list.Add(tag_name);
+
+                    //dump tags to txt file
+                    if (Globals.cacheForm.DumpTagscheckBox.Checked)
+                        using (StreamWriter TaglistDump = File.AppendText("Tags.txt"))
+                        {
+                            TaglistDump.WriteLine(tag_name);
+                            TaglistDump.Flush();
+                            TaglistDump.Close();
+                        }
+                    else
+                        {
+
+                        }
+                    
                 }
                 Globals.form.CacheLoadPBar.Value = i;
 
@@ -250,6 +264,7 @@ namespace HaloBlobViewer.source.formats
                 Globals.form.tagStatus.Text = Convert.ToString(i) + "/" + NumTagsToLoad;
                 Globals.form.tagStatus.Update();
             }
+
             Globals.form.CacheLoadPBar.Maximum = 0;
             Globals.form.CacheLoadPBar.Value = 0;
             Globals.form.tagStatus.Text = "0";

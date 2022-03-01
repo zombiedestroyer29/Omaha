@@ -30,6 +30,7 @@ namespace HaloBlobViewer
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DumpTagscheckBox = new System.Windows.Forms.CheckBox();
             this.NumTagsText = new System.Windows.Forms.TextBox();
             this.CancelButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -41,6 +42,7 @@ namespace HaloBlobViewer
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.DumpTagscheckBox);
             this.panel1.Controls.Add(this.NumTagsText);
             this.panel1.Controls.Add(this.CancelButton);
             this.panel1.Controls.Add(this.textBox1);
@@ -50,6 +52,16 @@ namespace HaloBlobViewer
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(216, 216);
             this.panel1.TabIndex = 0;
+            // 
+            // DumpTagscheckBox
+            // 
+            this.DumpTagscheckBox.AutoSize = true;
+            this.DumpTagscheckBox.Location = new System.Drawing.Point(121, 152);
+            this.DumpTagscheckBox.Name = "DumpTagscheckBox";
+            this.DumpTagscheckBox.Size = new System.Drawing.Size(88, 17);
+            this.DumpTagscheckBox.TabIndex = 5;
+            this.DumpTagscheckBox.Text = "Dump Taglist";
+            this.DumpTagscheckBox.UseVisualStyleBackColor = true;
             // 
             // NumTagsText
             // 
@@ -110,7 +122,7 @@ namespace HaloBlobViewer
             this.CachesToLoadCheckList.FormattingEnabled = true;
             this.CachesToLoadCheckList.Location = new System.Drawing.Point(3, 22);
             this.CachesToLoadCheckList.Name = "CachesToLoadCheckList";
-            this.CachesToLoadCheckList.Size = new System.Drawing.Size(210, 135);
+            this.CachesToLoadCheckList.Size = new System.Drawing.Size(210, 120);
             this.CachesToLoadCheckList.TabIndex = 0;
             this.CachesToLoadCheckList.SelectedIndexChanged += new System.EventHandler(this.CachesToLoadCheckList_SelectedIndexChanged);
             // 
@@ -146,5 +158,6 @@ namespace HaloBlobViewer
         private System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.Button CancelButton;
         public System.Windows.Forms.TextBox NumTagsText;
+        public System.Windows.Forms.CheckBox DumpTagscheckBox;
     }
 }

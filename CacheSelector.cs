@@ -16,6 +16,7 @@ namespace HaloBlobViewer
         public CacheSelector()
         {
             InitializeComponent();
+            Globals.cacheForm = this;
         }
 
         private void LoadCachesButton_Click(object sender, EventArgs e)
@@ -36,13 +37,13 @@ namespace HaloBlobViewer
                     Indexes.Add(Index);
                 }
                 Globals.form.LoadSomeCaches(Indexes);
-                CacheSelector.ActiveForm.Close();
+                this.Close();
             }
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
-            CacheSelector.ActiveForm.Close();
+            this.Close();
         }
 
         private void CachesToLoadCheckList_SelectedIndexChanged(object sender, EventArgs e)
