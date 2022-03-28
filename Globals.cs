@@ -10,6 +10,8 @@ namespace HaloBlobViewer
     {
         public static mainform form;
 
+        public static CacheSelector cacheForm;
+
         public static string BIPath;
     }
 }
